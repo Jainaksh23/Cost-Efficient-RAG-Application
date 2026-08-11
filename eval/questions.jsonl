@@ -1,0 +1,20 @@
+﻿{"id": "q001", "question": "What Python version is required to install Vaultly?", "category": "A", "gold_answer": "Python 3.10 or higher", "relevant_chunk_sources": ["install_guide.pdf"], "filters": {}}
+{"id": "q002", "question": "What is the default port that Vaultly runs on?", "category": "A", "gold_answer": "8080", "relevant_chunk_sources": ["install_guide.pdf"], "filters": {}}
+{"id": "q003", "question": "What is the monthly price of the Professional plan?", "category": "A", "gold_answer": "$79 per month", "relevant_chunk_sources": ["pricing_policy.pdf"], "filters": {}}
+{"id": "q004", "question": "How many days is the Vaultly free trial?", "category": "A", "gold_answer": "14-day free trial", "relevant_chunk_sources": ["pricing_policy.pdf"], "filters": {}}
+{"id": "q005", "question": "What is the API rate limit for Vaultly?", "category": "A", "gold_answer": "120 requests per minute", "relevant_chunk_sources": ["api_reference.md"], "filters": {}}
+{"id": "q006", "question": "What is the maximum file size allowed for a document upload via the API?", "category": "A", "gold_answer": "50 MB", "relevant_chunk_sources": ["api_reference.md"], "filters": {}}
+{"id": "q007", "question": "What is Vaultly's refund policy?", "category": "A", "gold_answer": "30-day money-back guarantee", "relevant_chunk_sources": ["pricing_policy.pdf"], "filters": {}}
+{"id": "q008", "question": "What two-factor authentication method does Vaultly support?", "category": "A", "gold_answer": "TOTP-compatible authenticator app", "relevant_chunk_sources": ["faq.md"], "filters": {}}
+{"id": "q009", "question": "Where does Vaultly store its application logs?", "category": "A", "gold_answer": "/var/log/vaultly/app.log", "relevant_chunk_sources": ["troubleshooting.pdf"], "filters": {}}
+{"id": "q010", "question": "What is the default storage given to a new workspace during the free trial?", "category": "A", "gold_answer": "1 GB of default workspace storage", "relevant_chunk_sources": ["getting_started.md"], "filters": {}}
+{"id": "q011", "question": "What is the Vaultly API base URL?", "category": "B", "gold_answer": "https://api.vaultly.io/v1", "relevant_chunk_sources": ["api_reference.md"], "filters": {"source_file": "api_reference.md"}}
+{"id": "q012", "question": "What error code is returned when a workspace has exceeded its storage quota?", "category": "B", "gold_answer": "VLT-2003", "relevant_chunk_sources": ["troubleshooting.pdf"], "filters": {"source_file": "troubleshooting.pdf"}}
+{"id": "q013", "question": "How many employees does Vaultly have?", "category": "B", "gold_answer": "85 employees", "relevant_chunk_sources": ["company_overview.html"], "filters": {"file_type": "html"}}
+{"id": "q014", "question": "What SSO standard was added in the version 2.3.5 release?", "category": "B", "gold_answer": "SAML 2.0 SSO", "relevant_chunk_sources": ["release_notes.html"], "filters": {"file_type": "html"}}
+{"id": "q015", "question": "What is the storage limit included in the Enterprise plan?", "category": "B", "gold_answer": "1 TB storage included", "relevant_chunk_sources": ["pricing_policy.pdf"], "filters": {"source_file": "pricing_policy.pdf"}}
+{"id": "q016", "question": "What is the Vaultly support email address listed in the troubleshooting guide?", "category": "B", "gold_answer": "support@vaultly.io", "relevant_chunk_sources": ["troubleshooting.pdf"], "filters": {"source_file": "troubleshooting.pdf"}}
+{"id": "q017", "question": "What is the boiling point of liquid nitrogen in degrees Celsius?", "category": "C", "gold_answer": null, "relevant_chunk_sources": [], "filters": {}}
+{"id": "q018", "question": "How many calories are in a standard slice of pepperoni pizza?", "category": "C", "gold_answer": null, "relevant_chunk_sources": [], "filters": {}}
+{"id": "q019", "question": "Which country won the 2023 FIFA Women's World Cup?", "category": "C", "gold_answer": null, "relevant_chunk_sources": [], "filters": {}}
+{"id": "q020", "question": "What is the chemical formula for caffeine?", "category": "C", "gold_answer": null, "relevant_chunk_sources": [], "filters": {}}

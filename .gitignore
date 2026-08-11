@@ -1,0 +1,7 @@
+.env
+__pycache__/
+*.pyc
+data/faiss.index
+data/rag_metadata.db
+data/rag_metadata.db-shm
+data/rag_metadata.db-wal

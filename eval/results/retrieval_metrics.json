@@ -1,0 +1,7 @@
+{
+  "Recall@k": 0.9375,
+  "MRR": 0.8125,
+  "nDCG@k": 0.8452324383928644,
+  "ContextPrecision": 0.4552083333333333,
+  "NoContextAccuracy (Cat C)": 1.0
+}

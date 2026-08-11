@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Vaultly - Release Notes</title>
+</head>
+<body>
+
+<h1>Vaultly Release Notes</h1>
+
+<hr>
+
+<h2>Version 2.4.1 - March 12, 2025</h2>
+<ul>
+  <li><strong>Bug Fix:</strong> Fixed a bug causing duplicate file uploads when the network
+      connection dropped mid-transfer. Files uploaded over an interrupted connection are now
+      safely deduplicated on the server side.</li>
+  <li><strong>Performance:</strong> Improved search indexing speed by 40% through parallel
+      shard processing. Large workspaces with over 10,000 documents will see the most benefit.</li>
+  <li><strong>Security:</strong> Updated the TLS certificate rotation schedule from annual to
+      quarterly to comply with emerging browser policies.</li>
+</ul>
+
+<h2>Version 2.4.0 - February 3, 2025</h2>
+<ul>
+  <li><strong>New Feature:</strong> Introduced AI-powered document summarization. Vaultly can
+      now generate a concise summary of any uploaded document. Access this feature from the
+      document detail page by clicking "Summarize."</li>
+  <li><strong>New Feature:</strong> Folder-level permissions. Admins can now restrict access
+      to individual folders, independent of workspace-level roles.</li>
+  <li><strong>Improvement:</strong> Reduced document upload time for files larger than 20 MB
+      by switching to chunked multipart uploads.</li>
+</ul>
+
+<h2>Version 2.3.5 - December 18, 2024</h2>
+<ul>
+  <li><strong>New Feature:</strong> Added support for SAML 2.0 SSO. Enterprise customers can
+      now configure Vaultly as a Service Provider in their identity provider (Okta, Azure AD,
+      OneLogin). Configuration is available under Settings &gt; Security &gt; SSO.</li>
+  <li><strong>Bug Fix:</strong> Fixed an issue where shared document links did not respect the
+      expiration date set at creation time.</li>
+</ul>
+
+<h2>Version 2.3.0 - October 7, 2024</h2>
+<ul>
+  <li><strong>New Feature:</strong> Launched the Vaultly mobile app for iOS and Android.
+      The app supports document browsing, photo uploads, commenting, and offline viewing
+      of recently accessed documents.</li>
+  <li><strong>New Feature:</strong> Added CSV export for search results and document metadata.</li>
+  <li><strong>Improvement:</strong> Dashboard loading time reduced by 60% through aggressive
+      server-side caching.</li>
+</ul>
+
+<h2>Version 2.2.0 - July 14, 2024</h2>
+<ul>
+  <li><strong>New Feature:</strong> Version history for all documents. Every save creates a
+      new version. Starter plans retain 30 days of history; Professional and Enterprise
+      retain unlimited history.</li>
+  <li><strong>New Feature:</strong> Bulk document download as a ZIP archive.</li>
+</ul>
+
+</body>
+</html>

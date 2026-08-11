@@ -1,0 +1,170 @@
+{
+  "aggregate": {
+    "Exact Match": 0.0,
+    "F1 Score": 0.19865589001309392,
+    "Faithfulness": 4.75,
+    "Answer Relevance": 4.75
+  },
+  "per_question": [
+    {
+      "id": "q001",
+      "question": "What Python version is required to install Vaultly?",
+      "em": 0.0,
+      "f1": 0.1142857142857143,
+      "faithfulness_score": 5,
+      "faithfulness_reason": "The answer directly quotes the context, specifying the minimum required Python version to install Vaultly.",
+      "relevance_score": 5,
+      "relevance_reason": "The answer directly addresses the question about the required Python version for Vaultly installation."
+    },
+    {
+      "id": "q002",
+      "question": "What is the default port that Vaultly runs on?",
+      "em": 0.0,
+      "f1": 0.08695652173913045,
+      "faithfulness_score": 5,
+      "faithfulness_reason": "The answer is directly supported by the context in Step 4 of the installation guide.",
+      "relevance_score": 5,
+      "relevance_reason": "The generated answer directly quotes the relevant section from the context where the default port is explicitly stated."
+    },
+    {
+      "id": "q003",
+      "question": "What is the monthly price of the Professional plan?",
+      "em": 0.0,
+      "f1": 0.4615384615384615,
+      "faithfulness_score": 5,
+      "faithfulness_reason": "The answer is fully supported by the context, specifically the pricing information in Chunk 1.",
+      "relevance_score": 5,
+      "relevance_reason": "The answer directly quotes the monthly price of the Professional plan from the provided context."
+    },
+    {
+      "id": "q004",
+      "question": "How many days is the Vaultly free trial?",
+      "em": 0.0,
+      "f1": 0.2727272727272727,
+      "faithfulness_score": 5,
+      "faithfulness_reason": "The answer is directly supported by the context in Chunk 2, which explicitly states the free trial duration.",
+      "relevance_score": 5,
+      "relevance_reason": "The answer directly addresses the question about the Vaultly free trial duration."
+    },
+    {
+      "id": "q005",
+      "question": "What is the API rate limit for Vaultly?",
+      "em": 0.0,
+      "f1": 0.32,
+      "faithfulness_score": 5,
+      "faithfulness_reason": "The answer is directly supported by the context in Chunk 1 of the api_reference.md file.",
+      "relevance_score": 5,
+      "relevance_reason": "The answer directly quotes the relevant information from the context about the API rate limit for Vaultly."
+    },
+    {
+      "id": "q006",
+      "question": "What is the maximum file size allowed for a document upload via the API?",
+      "em": 0.0,
+      "f1": 0.25,
+      "faithfulness_score": 5,
+      "faithfulness_reason": "The answer is fully supported by the context in Chunk 4, which explicitly states the maximum file size is 50 MB.",
+      "relevance_score": 5,
+      "relevance_reason": "The answer directly references the maximum file size allowed for a document upload via the API."
+    },
+    {
+      "id": "q007",
+      "question": "What is Vaultly's refund policy?",
+      "em": 0.0,
+      "f1": 0.0625,
+      "faithfulness_score": 5,
+      "faithfulness_reason": "The answer is fully supported by the context, specifically the 'Vaultly Pricing and Refund Policy' section.",
+      "relevance_score": 5,
+      "relevance_reason": "The answer directly quotes the refund policy from the provided context, making it fully relevant to the question."
+    },
+    {
+      "id": "q008",
+      "question": "What two-factor authentication method does Vaultly support?",
+      "em": 0.0,
+      "f1": 0.0,
+      "faithfulness_score": 1,
+      "faithfulness_reason": "The answer contradicts the context, as the context does not mention two-factor authentication.",
+      "relevance_score": 1,
+      "relevance_reason": "The context does not mention two-factor authentication methods supported by Vaultly."
+    },
+    {
+      "id": "q009",
+      "question": "Where does Vaultly store its application logs?",
+      "em": 0.0,
+      "f1": 0.07999999999999999,
+      "faithfulness_score": 5,
+      "faithfulness_reason": "The answer is fully supported by the context in Chunk 1 of the troubleshooting guide.",
+      "relevance_score": 5,
+      "relevance_reason": "The answer directly addresses the question by specifying the exact file paths where Vaultly stores its application logs on Linux and Windows systems."
+    },
+    {
+      "id": "q010",
+      "question": "What is the default storage given to a new workspace during the free trial?",
+      "em": 0.0,
+      "f1": 0.3076923076923077,
+      "faithfulness_score": 5,
+      "faithfulness_reason": "The answer is fully supported by the context in getting_started.md, which explicitly states the default storage for a new workspace during the free trial.",
+      "relevance_score": 5,
+      "relevance_reason": "The answer directly addresses the question about the default storage given to a new workspace during the free trial."
+    },
+    {
+      "id": "q011",
+      "question": "What is the Vaultly API base URL?",
+      "em": 0.0,
+      "f1": 0.19999999999999998,
+      "faithfulness_score": 5,
+      "faithfulness_reason": "The answer is fully supported by the context, as it directly quotes the Base URL from the provided API reference.",
+      "relevance_score": 5,
+      "relevance_reason": "The answer directly quotes the relevant section from the context that answers the question."
+    },
+    {
+      "id": "q012",
+      "question": "What error code is returned when a workspace has exceeded its storage quota?",
+      "em": 0.0,
+      "f1": 0.006024096385542168,
+      "faithfulness_score": 5,
+      "faithfulness_reason": "The answer is directly supported by the Common Error Codes section in the context.",
+      "relevance_score": 5,
+      "relevance_reason": "The answer directly matches the question by providing the exact error code for a storage quota exceeded error."
+    },
+    {
+      "id": "q013",
+      "question": "How many employees does Vaultly have?",
+      "em": 0.0,
+      "f1": 0.25,
+      "faithfulness_score": 5,
+      "faithfulness_reason": "The answer is directly stated in the context as 'Team Size: 85 employees'.",
+      "relevance_score": 5,
+      "relevance_reason": "The answer directly quotes the relevant information from the context that answers the question."
+    },
+    {
+      "id": "q014",
+      "question": "What SSO standard was added in the version 2.3.5 release?",
+      "em": 0.0,
+      "f1": 0.3157894736842105,
+      "faithfulness_score": 5,
+      "faithfulness_reason": "The answer is directly supported by the context in the release notes for version 2.3.5.",
+      "relevance_score": 5,
+      "relevance_reason": "The answer directly references the version 2.3.5 release and specifies the added SSO standard as SAML 2.0."
+    },
+    {
+      "id": "q015",
+      "question": "What is the storage limit included in the Enterprise plan?",
+      "em": 0.0,
+      "f1": 0.3333333333333333,
+      "faithfulness_score": 5,
+      "faithfulness_reason": "The answer is fully supported by the context, as it directly quotes the Enterprise plan's storage limit from the provided pricing policy document.",
+      "relevance_score": 5,
+      "relevance_reason": "The answer directly quotes the Enterprise plan storage limit from the provided context."
+    },
+    {
+      "id": "q016",
+      "question": "What is the Vaultly support email address listed in the troubleshooting guide?",
+      "em": 0.0,
+      "f1": 0.11764705882352941,
+      "faithfulness_score": 5,
+      "faithfulness_reason": "The answer is directly supported by the context in the second chunk of the troubleshooting guide.",
+      "relevance_score": 5,
+      "relevance_reason": "The answer directly quotes the relevant sentence from the provided context."
+    }
+  ]
+}

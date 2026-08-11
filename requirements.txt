@@ -1,0 +1,17 @@
+# ── Core ingestion stack (pinned to tested versions) ─────────────────────────
+faiss-cpu==1.14.3
+sentence-transformers==5.7.0
+pypdf==6.15.0
+beautifulsoup4==4.15.0
+python-dotenv==1.1.1
+numpy==2.5.1
+groq==0.15.0
+
+# ── API layer (FastAPI + server) ──────────────────────────────────────
+fastapi>=0.111.0
+uvicorn[standard]>=0.30.0
+pydantic>=2.7.0
+
+# ── Future: generation + eval ─────────────────────────────────────────────────
+# google-generativeai>=0.7.0
+# structlog>=24.1.0
