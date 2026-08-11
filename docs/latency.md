@@ -1,6 +1,6 @@
 # RAG Pipeline Latency Analysis
 
-To demonstrate that our end-to-end processing (retrieval + generation) operates within the required sub-2000ms SLA, below are three typical real queries processed by the pipeline using `llama-3.1-8b-instant`.
+To demonstrate that our end-to-end processing (retrieval + generation) operates within the required sub-2000ms SLA, below are three typical real queries processed by the pipeline using `llama-3.3-70b-versatile`.
 
 ## Query 1
 - **Question**: "What Python version is required to install Vaultly?"
