@@ -349,10 +349,10 @@ print(f"Retrieval: {data['retrieval_latency_ms']}ms | Generation: {data['generat
 | MRR | 0.81 |
 | No-Context Accuracy | 100% |
 | Context Precision | 45.52% |
-| F1 (token overlap) | 0.44 |
+| F1 (token overlap) | 0.1987 |
 | Retrieval Latency p50 | 28 ms |
 | Total Latency p50 | 331 ms |
-| Cost per 1,000 queries | ~$0.07 |
+| Cost per 1,000 queries | ~$1.26 |
 
 Full reports: [`eval/results/`](eval/results/)
 
@@ -383,10 +383,10 @@ python eval/run_answer_eval.py
 | Embedding model | **$0** — runs locally |
 | FAISS vector store | **$0** — no managed service |
 | SQLite metadata | **$0** — file-based |
-| Groq LLM (llama-3.3-70b-versatile) | ~$0.07 per 1,000 queries |
+| Groq LLM (llama-3.3-70b-versatile) | ~$1.26 per 1,000 queries |
 | **Total infrastructure** | **~$20/month** (compute host only) |
 
-vs. Pinecone + OpenAI: ~$70+/month minimum
+vs. Pinecone Serverless (same Groq LLM): ~$62.59/month minimum
 
 ---
 
