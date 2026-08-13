@@ -1,4 +1,5 @@
 from fastapi import FastAPI
+from fastapi.staticfiles import StaticFiles
 from contextlib import asynccontextmanager
 
 import config
@@ -22,6 +23,8 @@ app = FastAPI(title="Vaultly RAG API", lifespan=lifespan)
 
 app.include_router(router)
 
+# Mount static files at / so index.html serves directly
+app.mount("/", StaticFiles(directory="static", html=True), name="static")
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run("api.main:app", host=config.API_HOST, port=config.API_PORT, reload=True)
