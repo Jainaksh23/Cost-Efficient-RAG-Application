@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cost-Efficient RAG Chat</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <h1>Knowledge Base Chat</h1>
+            <p>Ask questions. Get cited answers.</p>
+        </header>
+
+        <main id="chat-history">
+            <!-- Chat history will be rendered here -->
+        </main>
+
+        <div class="input-area">
+            <div id="loading-indicator" class="hidden">
+                <div class="spinner"></div>
+                <span>Retrieving and generating answer...</span>
+            </div>
+            <form id="chat-form">
+                <input type="text" id="question-input" placeholder="Type your question here..." required autocomplete="off">
+                <button type="submit" id="send-button">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="22" y1="2" x2="11" y2="13"></line>
+                        <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                    </svg>
+                </button>
+            </form>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
