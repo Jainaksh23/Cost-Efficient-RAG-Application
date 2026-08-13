@@ -1,11 +1,3 @@
-import os
-# Memory optimizations for 512MB RAM limit (Render free tier)
-os.environ["OMP_NUM_THREADS"] = "1"
-os.environ["MALLOC_ARENA_MAX"] = "2"
-
-import torch
-torch.set_num_threads(1)
-
 from fastapi import FastAPI
 from fastapi.staticfiles import StaticFiles
 from contextlib import asynccontextmanager

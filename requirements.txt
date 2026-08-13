@@ -1,6 +1,6 @@
 # ── Core ingestion stack (pinned to tested versions) ─────────────────────────
 faiss-cpu==1.14.3
-sentence-transformers==5.7.0
+fastembed==0.4.2
 pypdf==6.15.0
 beautifulsoup4==4.15.0
 python-dotenv==1.1.1

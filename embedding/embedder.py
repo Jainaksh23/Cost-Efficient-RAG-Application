@@ -1,25 +1,26 @@
 """
 embedding/embedder.py
-Wraps sentence-transformers/all-MiniLM-L6-v2.
+Wraps fastembed TextEmbedding (ONNX-based).
 - Lazy singleton: the model is loaded once on first call.
 - Batched encoding controlled by EMBED_BATCH_SIZE.
-- Returns L2-normalised float32 arrays of shape (N, 384).
+- Returns float32 arrays of shape (N, 384).
 """
 from __future__ import annotations
 
 import numpy as np
-from sentence_transformers import SentenceTransformer
+from fastembed import TextEmbedding
 
 import config
 
-_model: SentenceTransformer | None = None
+_model: TextEmbedding | None = None
 
 
-def _get_model() -> SentenceTransformer:
+def _get_model() -> TextEmbedding:
     global _model
     if _model is None:
         print(f"[Embedder] Loading model: {config.EMBED_MODEL}")
-        _model = SentenceTransformer(config.EMBED_MODEL)
+        # Note: Production deployments now use fastembed (ONNX) to avoid torch/CUDA overhead.
+        _model = TextEmbedding(model_name=config.EMBED_MODEL)
     return _model
 
 
@@ -39,17 +40,9 @@ def embed(texts: list[str]) -> np.ndarray:
 
     model = _get_model()
     batch_size = config.EMBED_BATCH_SIZE
-    batches: list[np.ndarray] = []
 
-    for start in range(0, len(texts), batch_size):
-        batch = texts[start : start + batch_size]
-        # normalize_embeddings=True applies L2 normalisation inside the model
-        emb = model.encode(
-            batch,
-            normalize_embeddings=True,
-            show_progress_bar=False,
-            batch_size=batch_size,
-        )
-        batches.append(emb.astype(np.float32))
-
-    return np.vstack(batches)
+    # fastembed's .embed() accepts an iterable and handles batching internally.
+    # It yields numpy arrays for each document, which we collect and stack.
+    embeddings = list(model.embed(texts, batch_size=batch_size))
+    
+    return np.vstack(embeddings).astype(np.float32)
