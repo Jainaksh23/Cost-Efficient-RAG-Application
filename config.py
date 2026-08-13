@@ -5,6 +5,7 @@ Nothing is hardcoded; every value has a safe default.
 """
 import os
 from pathlib import Path
+# pyrefly: ignore [missing-import]
 from dotenv import load_dotenv
 
 load_dotenv()  # reads .env if present; silently ignored if absent
@@ -19,7 +20,7 @@ CHUNK_OVERLAP: int = int(os.getenv("CHUNK_OVERLAP", "256"))
 
 # ── Embedding ─────────────────────────────────────────────────────────────────
 EMBED_MODEL: str       = os.getenv("EMBED_MODEL", "sentence-transformers/all-MiniLM-L6-v2")
-EMBED_BATCH_SIZE: int  = int(os.getenv("EMBED_BATCH_SIZE", "64"))
+EMBED_BATCH_SIZE: int  = int(os.getenv("EMBED_BATCH_SIZE", "32"))
 EMBED_DIMENSION: int   = 384  # fixed for all-MiniLM-L6-v2; not overridable
 
 # ── Retrieval ─────────────────────────────────────────────────────────────────

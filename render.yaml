@@ -3,7 +3,7 @@ services:
     name: cost-efficient-rag-app
     env: python
     plan: free
-    buildCommand: "pip install -r requirements.txt"
+    buildCommand: "pip install torch==2.4.0+cpu --extra-index-url https://download.pytorch.org/whl/cpu && pip install -r requirements.txt"
     startCommand: "uvicorn api.main:app --host 0.0.0.0 --port $PORT"
     envVars:
       - key: GROQ_API_KEY
