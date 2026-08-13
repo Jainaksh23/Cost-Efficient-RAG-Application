@@ -20,7 +20,8 @@ def _get_model() -> TextEmbedding:
     if _model is None:
         print(f"[Embedder] Loading model: {config.EMBED_MODEL}")
         # Note: Production deployments now use fastembed (ONNX) to avoid torch/CUDA overhead.
-        _model = TextEmbedding(model_name=config.EMBED_MODEL)
+        # threads=1 is CRITICAL for 512MB RAM environments like Render's free tier.
+        _model = TextEmbedding(model_name=config.EMBED_MODEL, threads=1)
     return _model
 
 
