@@ -272,6 +272,20 @@ INFO:     Uvicorn running on http://0.0.0.0:8000
 
 ---
 
+## 🌍 Deployment
+
+This project is configured to deploy directly to **Render**'s free tier. 
+
+### Render Free Tier Notes
+- **Cold Starts**: Render's free instances spin down after 15 minutes of inactivity. The first request after a spin-down will take 30-60 seconds to process while the server boots up.
+- **Ephemeral Disk**: The free tier disk resets on every redeploy. To handle this, the app is configured to automatically re-ingest the `data/` folder and rebuild the FAISS index + SQLite DB during server startup if they are missing.
+
+### Live URL
+The live API and chat UI are available at:  
+👉 **`<your-render-url>`** *(Replace with the URL provided by Render after deployment)*
+
+---
+
 ## 🚀 Using the API
 
 ### Option A — Interactive API Docs (easiest)
